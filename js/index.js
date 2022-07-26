@@ -53,12 +53,10 @@ if (hacker1 === hacker2) {
     }
 } else {
     for (let i = 0; i < shortestName.length; i++) {
-        if (hacker1[i].toLowerCase() === hacker2[i].toLowerCase()) {
-            continue;
-        } else if (hacker1[i].toLowerCase() < hacker2[i].toLowerCase()) {
-            console.log (`The driver's name goes first.`);
+        if (hacker1[i].toLowerCase() < hacker2[i].toLowerCase()) {
+            console.log (`The driver’s name goes first.`);
             break;
-        } else {
+        } else if (hacker1[i].toLowerCase() > hacker2[i].toLowerCase()) {
             console.log (`Yo, the navigator goes first definitely.`);
             break;
         }
